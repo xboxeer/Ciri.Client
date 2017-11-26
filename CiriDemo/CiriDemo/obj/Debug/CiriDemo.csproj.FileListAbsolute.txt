@@ -1,0 +1,42 @@
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\bin\Debug\CiriDemo.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\bin\Debug\CiriDemo.exe
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\bin\Debug\CiriDemo.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\MainWindow.g.cs
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\App.g.cs
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo_MarkupCompile.cache
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\MainWindow.baml
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.g.resources
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.exe
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo_MarkupCompile.lref
+C:\Users\Administrator\documents\visual studio 2015\Projects\CiriDemo\CiriDemo\obj\Debug\CiriDemo.csprojResolveAssemblyReference.cache
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\CiriDemo.exe.config
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.exe
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.pdb
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\CiriDemo.exe
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\CiriDemo.pdb
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.csprojResolveAssemblyReference.cache
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\MainWindow.g.cs
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\App.g.cs
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo_MarkupCompile.cache
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo_MarkupCompile.lref
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\MainWindow.baml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.g.resources
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.Properties.Resources.resources
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\CiriDemo.csproj.GenerateResource.Cache
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\Simple Styles.baml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\Microsoft.Expression.Drawing.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\de\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\es\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\fr\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\it\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\ja\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\ko\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\ru\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\zh-Hans\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\bin\Debug\zh-Hant\Microsoft.Expression.Drawing.resources.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\App.baml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\TBMyChatBoxControl.baml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\CiriDemo\CiriDemo\obj\Debug\TBMyChatBoxControl.g.cs

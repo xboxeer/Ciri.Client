@@ -1,0 +1,240 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CiriDemo"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="CiriDemo.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        AllowsTransparency="True" WindowStyle="None" OpacityMask="White" Background="Transparent">
+	<Window.Resources>
+		<Storyboard x:Key="OnMouseEnter1"/>
+		<Style x:Key="ImageStyle1" TargetType="{x:Type Image}">
+			<Style.Resources>
+				<Storyboard x:Key="OnMouseEnter1">
+					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="{x:Null}">
+						<EasingDoubleKeyFrame KeyTime="0:0:0.48" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+				<Storyboard x:Key="Storyboard1">
+					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="{x:Null}">
+						<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.495"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</Style.Resources>
+			<Setter Property="Opacity" Value="0.5"/>
+			<Style.Triggers>
+				<EventTrigger RoutedEvent="Mouse.MouseLeave">
+					<BeginStoryboard x:Name="Storyboard1_BeginStoryboard" Storyboard="{StaticResource Storyboard1}"/>
+				</EventTrigger>
+				<EventTrigger RoutedEvent="Mouse.MouseEnter">
+					<BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+				</EventTrigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="StackPanelStyle1" TargetType="{x:Type StackPanel}" >
+			<Style.Resources>
+				<Storyboard x:Key="OnMouseEnter1">
+					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="{x:Null}">
+						<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+				<Storyboard x:Key="OnMouseLeave1">
+					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="{x:Null}">
+						<EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+						<EasingDoubleKeyFrame KeyTime="0:0:0.09" Value="0.095"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</Style.Resources>
+			<Setter Property="Background">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF391EDE" Offset="1"/>
+						<GradientStop Color="#FF320536"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="OpacityMask" Value="{x:Null}"/>
+		</Style>
+		<Style x:Key="BorderStyle1" TargetType="{x:Type Border}">
+			<Style.Resources>
+				<Storyboard x:Key="OnMouseEnter1">
+					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="{x:Null}">
+						<EasingDoubleKeyFrame KeyTime="0:0:0.21" Value="1"/>
+					</DoubleAnimationUsingKeyFrames>
+				</Storyboard>
+			</Style.Resources>
+			<Setter Property="Opacity" Value="0.095"/>
+			<Style.Triggers>
+				<EventTrigger RoutedEvent="Mouse.MouseLeave">
+					<RemoveStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+				</EventTrigger>
+				<EventTrigger RoutedEvent="Mouse.MouseEnter">
+					<BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+				</EventTrigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="CalloutStyle1" TargetType="{x:Type ed:Callout}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ed:Callout}">
+						<ControlTemplate.Resources>
+							<Storyboard x:Key="OnMouseEnter1">
+								<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border">
+									<EasingDoubleKeyFrame KeyTime="0" Value="0.195"/>
+									<EasingDoubleKeyFrame KeyTime="0:0:0.14" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</ControlTemplate.Resources>
+						<Grid>
+							<Path x:Name="PART_Path" Fill="{TemplateBinding Fill}" HorizontalAlignment="Stretch" StrokeStartLineCap="{TemplateBinding StrokeStartLineCap}" StrokeDashOffset="{TemplateBinding StrokeDashOffset}" Stretch="Fill" StrokeEndLineCap="{TemplateBinding StrokeEndLineCap}" StrokeDashCap="{TemplateBinding StrokeDashCap}" Stroke="{TemplateBinding Stroke}" StrokeThickness="{TemplateBinding StrokeThickness}" StrokeMiterLimit="{TemplateBinding StrokeMiterLimit}" StrokeLineJoin="{TemplateBinding StrokeLineJoin}" StrokeDashArray="{TemplateBinding StrokeDashArray}" UseLayoutRounding="False" VerticalAlignment="Stretch" Margin="0,-11.5,-163,-42"/>
+							<Border x:Name="border" BorderThickness="1" HorizontalAlignment="Left" Height="17.167" Margin="150.667,-2.668,0,0" VerticalAlignment="Top" Width="276.333" RenderTransformOrigin="0.503,-0.281" Opacity="0.5" AllowDrop="True" MouseLeftButtonDown="border_MouseLeftButtonDown">
+								<Border.Background>
+									<RadialGradientBrush>
+										<GradientStop Offset="1"/>
+										<GradientStop Color="#FF3399FF" Offset="0.216"/>
+										<GradientStop Color="#FF3399FF"/>
+									</RadialGradientBrush>
+								</Border.Background>
+								<ed:RegularPolygon Height="6.247" InnerRadius="1" Margin="118.5,0,149.333,4.92" PointCount="3" Stretch="Fill" VerticalAlignment="Bottom" Width="Auto" RenderTransformOrigin="0.461,0.627">
+									<ed:RegularPolygon.Fill>
+										<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+											<GradientStop Color="#FF4D4999" Offset="0"/>
+											<GradientStop Color="#FF275DE2" Offset="1"/>
+										</LinearGradientBrush>
+									</ed:RegularPolygon.Fill>
+									<ed:RegularPolygon.Stroke>
+										<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+											<GradientStop Color="#FF68749C" Offset="0"/>
+											<GradientStop Color="#006BA6C1" Offset="1"/>
+										</LinearGradientBrush>
+									</ed:RegularPolygon.Stroke>
+								</ed:RegularPolygon>
+							</Border>
+							<TextBox x:Name="TBMyChatBox" HorizontalAlignment="Left" Height="108" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Content, BindsDirectlyToSource=True, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Top" Width="417" Background="{x:Null}" BorderBrush="{x:Null}" KeyUp="TBMyChatBox_KeyUp"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="border">
+								<BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+							</EventTrigger>
+							<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="border">
+								<RemoveStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+							</EventTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="CalloutStyle2" TargetType="{x:Type ed:Callout}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ed:Callout}">
+						<ControlTemplate.Resources>
+							<Storyboard x:Key="OnMouseEnter1">
+								<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="border_Copy">
+									<EasingDoubleKeyFrame KeyTime="0:0:0.08" Value="1"/>
+								</DoubleAnimationUsingKeyFrames>
+							</Storyboard>
+						</ControlTemplate.Resources>
+						<Grid>
+							<Path x:Name="PART_Path" Fill="{TemplateBinding Fill}" StrokeStartLineCap="{TemplateBinding StrokeStartLineCap}" StrokeDashOffset="{TemplateBinding StrokeDashOffset}" Stretch="Fill" StrokeEndLineCap="{TemplateBinding StrokeEndLineCap}" StrokeDashCap="{TemplateBinding StrokeDashCap}" Stroke="{TemplateBinding Stroke}" StrokeThickness="{TemplateBinding StrokeThickness}" StrokeMiterLimit="{TemplateBinding StrokeMiterLimit}" StrokeLineJoin="{TemplateBinding StrokeLineJoin}" StrokeDashArray="{TemplateBinding StrokeDashArray}" UseLayoutRounding="False" VerticalAlignment="Stretch" Margin="-36.384,0,0,0" Width="Auto"/>
+							<Border x:Name="border_Copy" BorderThickness="1" HorizontalAlignment="Left" Height="14.833" Margin="323.521,61.204,-57.689,0" VerticalAlignment="Top" Width="100.333" RenderTransformOrigin="0.503,-0.281" Opacity="0.5" AllowDrop="True" MouseLeftButtonDown="TBCborder_MouseLeftButtonDown">
+								<Border.RenderTransform>
+									<TransformGroup>
+										<ScaleTransform ScaleY="-1"/>
+										<SkewTransform/>
+										<RotateTransform Angle="-90"/>
+										<TranslateTransform/>
+									</TransformGroup>
+								</Border.RenderTransform>
+								<Border.Background>
+									<RadialGradientBrush>
+										<GradientStop Offset="1"/>
+										<GradientStop Color="#FF3399FF" Offset="0.216"/>
+										<GradientStop Color="#FF3399FF"/>
+									</RadialGradientBrush>
+								</Border.Background>
+								<ed:RegularPolygon Height="4.583" InnerRadius="1" Margin="-71.667,-21.5,163.5,29.75" PointCount="3" Stretch="Fill" VerticalAlignment="Bottom" Width="Auto" RenderTransformOrigin="3.759,16.002">
+									<ed:RegularPolygon.RenderTransform>
+										<TransformGroup>
+											<ScaleTransform/>
+											<SkewTransform/>
+											<RotateTransform Angle="-179.607"/>
+											<TranslateTransform X="74.814" Y="-116.551"/>
+										</TransformGroup>
+									</ed:RegularPolygon.RenderTransform>
+									<ed:RegularPolygon.Fill>
+										<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+											<GradientStop Color="#FF4D4999" Offset="0"/>
+											<GradientStop Color="#FF275DE2" Offset="1"/>
+										</LinearGradientBrush>
+									</ed:RegularPolygon.Fill>
+									<ed:RegularPolygon.Stroke>
+										<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+											<GradientStop Color="#FF68749C" Offset="0"/>
+											<GradientStop Color="#006BA6C1" Offset="1"/>
+										</LinearGradientBrush>
+									</ed:RegularPolygon.Stroke>
+								</ed:RegularPolygon>
+							</Border>
+							<TextBox x:Name="TBCiriChatBox" HorizontalAlignment="Left" Height="93.5" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Content, BindsDirectlyToSource=True, RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Top" Width="346.165" BorderBrush="{x:Null}" Background="{x:Null}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="border_Copy">
+								<RemoveStoryboard BeginStoryboardName="OnMouseEnter1_BeginStoryboard"/>
+							</EventTrigger>
+							<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="border_Copy">
+								<BeginStoryboard x:Name="OnMouseEnter1_BeginStoryboard" Storyboard="{StaticResource OnMouseEnter1}"/>
+							</EventTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="29*"/>
+			<ColumnDefinition Width="76*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="137*"/>
+			<RowDefinition Height="213*"/>
+		</Grid.RowDefinitions>
+    
+		<Image Margin="3.335,4.333,3.665,5.667" Source="logo-tailed.png" MouseDown="Image_MouseDown"/>
+		<Border x:Name="CiriMenu" BorderBrush="#FF3A1FE2" BorderThickness="1" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="145" Grid.Row="1" CornerRadius="5" Style="{DynamicResource BorderStyle1}">
+			<Border.Background>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="#FF5C5189" Offset="0"/>
+					<GradientStop Color="#FF120842" Offset="1"/>
+				</LinearGradientBrush>
+			</Border.Background>
+			<StackPanel Height="34" VerticalAlignment="Top" Orientation="Horizontal" Style="{DynamicResource StackPanelStyle1}" Margin="0,0,-1,-3" Background="{x:Null}">
+				<Image x:Name="IMGChat" Source="chatting-tailed.png" Stretch="UniformToFill" Width="30" Margin="15,3.667,10,5" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Opacity="0.5" Style="{DynamicResource ImageStyle1}" MouseLeftButtonDown="IMGChat_MouseLeftButtonDown" />
+				<Image Source="plan-tailed.png" Margin="0,3.667,10,5" MouseEnter="Image_MouseEnter" Style="{DynamicResource ImageStyle1}" Width="32.003" />
+				<Image Source="setting-tailed.png" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Style="{DynamicResource ImageStyle1}" Margin="0,3.667,0,5" Width="28.667" />
+			</StackPanel>
+		</Border>
+		<Border BorderBrush="#FF120842" BorderThickness="1" HorizontalAlignment="Left" Height="15.333" Margin="110.375,5.125,0,0" Style="{DynamicResource BorderStyle1}" VerticalAlignment="Top" Width="33.46" CornerRadius="2">
+			<StackPanel HorizontalAlignment="Left" Height="13.583" Style="{DynamicResource StackPanelStyle1}" VerticalAlignment="Top" Width="31.335" Orientation="Horizontal" Margin="0,0,0,-0.25">
+				<Image HorizontalAlignment="Left" Height="13.583" VerticalAlignment="Top" Width="14.295" Source="Minimize-tailed.png" Margin="0,0,2,0" Style="{DynamicResource ImageStyle1}" MouseDown="Image_MouseDown_2"/>
+				<Image HorizontalAlignment="Left" Height="13.583" VerticalAlignment="Top" Width="14.125" Source="Exit-tailed.png" Style="{DynamicResource ImageStyle1}" Opacity="1" Stretch="Fill" RenderTransformOrigin="0.543,0.574" MouseDown="Image_MouseDown_1"/>
+			</StackPanel>
+		</Border>
+		<ed:Callout x:Name="TBMyChat" AnchorPoint="0.081,-0.067" CalloutStyle="RoundedRectangle" Fill="White" FontSize="14.667" HorizontalAlignment="Left" Height="134" Margin="0,44,0,0" VerticalAlignment="Top" Width="437" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource CalloutStyle1}" Content="{Binding Text, BindsDirectlyToSource=True, ElementName=TBMyChatBox, Mode=TwoWay}">
+			<ed:Callout.Stroke>
+				<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+			</ed:Callout.Stroke>
+		</ed:Callout>
+		<ed:Callout x:Name="TBCiriChat" AnchorPoint="-0.098,0.767" CalloutStyle="RoundedRectangle" Grid.Column="1" Fill="White" FontSize="14.667" HorizontalAlignment="Left" Height="113.5" Margin="3.835,0,0,0" VerticalAlignment="Top" Width="366.165" Style="{DynamicResource CalloutStyle2}">
+			<ed:Callout.Stroke>
+				<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+			</ed:Callout.Stroke>
+		</ed:Callout>
+    
+	</Grid>
+    
+</Window>
