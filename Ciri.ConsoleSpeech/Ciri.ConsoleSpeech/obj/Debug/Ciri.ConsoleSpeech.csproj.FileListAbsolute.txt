@@ -1,0 +1,10 @@
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\Ciri.ConsoleSpeech.exe.config
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\Ciri.ConsoleSpeech.exe
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\Ciri.ConsoleSpeech.pdb
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\AipSdk.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\Newtonsoft.Json.dll
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\AipSdk.xml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\bin\Debug\Newtonsoft.Json.xml
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\obj\Debug\Ciri.ConsoleSpeech.csprojResolveAssemblyReference.cache
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\obj\Debug\Ciri.ConsoleSpeech.exe
+F:\Ciri.DesktopClient\Ciri.Layout\Ciri-Client\Ciri.ConsoleSpeech\Ciri.ConsoleSpeech\obj\Debug\Ciri.ConsoleSpeech.pdb
