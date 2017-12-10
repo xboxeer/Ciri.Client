@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CiriDemo"
         xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="CiriDemo.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525"
+        Title="Ciri" Height="350" Width="525" Icon="logo2.ico"
         AllowsTransparency="True" WindowStyle="None" OpacityMask="White" Background="Transparent">
 	<Window.Resources>
 		<Storyboard x:Key="OnMouseEnter1"/>
@@ -113,7 +113,7 @@
 									</ed:RegularPolygon.Stroke>
 								</ed:RegularPolygon>
 							</Border>
-							<TextBox x:Name="TBMyChatBox" HorizontalAlignment="Left" Height="108" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Content, BindsDirectlyToSource=True, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" VerticalAlignment="Top" Width="417" Background="{x:Null}" BorderBrush="{x:Null}" KeyUp="TBMyChatBox_KeyUp"/>
+							<TextBox x:Name="TBMyChatBox" HorizontalAlignment="Left" Height="108" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Content, BindsDirectlyToSource=True, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="417" Background="{x:Null}" BorderBrush="{x:Null}" KeyUp="TBMyChatBox_KeyUp"/>
 						</Grid>
 						<ControlTemplate.Triggers>
 							<EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="border">
@@ -224,7 +224,7 @@
 				<Image HorizontalAlignment="Left" Height="13.583" VerticalAlignment="Top" Width="14.125" Source="Exit-tailed.png" Style="{DynamicResource ImageStyle1}" Opacity="1" Stretch="Fill" RenderTransformOrigin="0.543,0.574" MouseDown="Image_MouseDown_1"/>
 			</StackPanel>
 		</Border>
-		<ed:Callout x:Name="TBMyChat" AnchorPoint="0.081,-0.067" CalloutStyle="RoundedRectangle" Fill="White" FontSize="14.667" HorizontalAlignment="Left" Height="134" Margin="0,44,0,0" VerticalAlignment="Top" Width="437" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource CalloutStyle1}" Content="{Binding Text, BindsDirectlyToSource=True, ElementName=TBMyChatBox, Mode=TwoWay}">
+		<ed:Callout x:Name="TBMyChat" AnchorPoint="0.081,-0.067" CalloutStyle="RoundedRectangle" Fill="White" FontSize="14.667" HorizontalAlignment="Left" Height="134" Margin="0,44,0,0" VerticalAlignment="Top" Width="437" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource CalloutStyle1}" Content="">
 			<ed:Callout.Stroke>
 				<SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
 			</ed:Callout.Stroke>
